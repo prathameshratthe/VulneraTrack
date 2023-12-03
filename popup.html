@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vulnerability Checker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="header">
+    <img src="icon128.png" alt="VulneraTrack Logo" id="logo">
+    <h1>VulneraTrack</h1>
+  </div>
+  <p id="captured-url"></p>
+  <div id="result-container">
+    <p id="vulnerability-score">Loading...</p>
+    <input type="range" id="score-slider" min="1" max="10" step="1" disabled>
+    <p id="captured-url"></p>
+    <button id="open-webpage">About us</button>
+  </div>
+  
+  <div id="footer">
+    <p>© 2023 VulneraTrack Extension</p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

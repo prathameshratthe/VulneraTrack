@@ -1,0 +1,42 @@
+body {
+ width: 300px;
+ margin: 10px;
+}
+
+#header {
+ text-align: center;
+ margin-bottom: 10px;
+}
+
+#logo {
+ width: 80px; /* Adjust the size as needed */
+ height: 80px; /* Adjust the size as needed */
+}
+
+h1 {
+ font-size: 20px;
+ margin-top: 5px;
+}
+
+#result-container {
+ text-align: center;
+ margin-bottom: 20px; /* Add margin to separate from the footer */
+}
+
+#vulnerability-score {
+ font-size: 16px;
+}
+
+#score-slider {
+ width: 80%;
+ margin-top: 10px;
+}
+
+#footer {
+ text-align: center;
+}
+
+#footer p {
+ font-size: 12px;
+ margin: 0;
+}

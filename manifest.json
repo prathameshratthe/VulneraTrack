@@ -1,0 +1,37 @@
+{
+ "manifest_version": 3,
+ "name": "VulneraTrack",
+ "version": "1.0",
+ "permissions": ["tabs","activeTab", "storage", "webNavigation"],
+ "icons": {
+   "16": "icon128.png",
+   "48": "icon128.png",
+   "128": "icon128.png"
+ },
+ "action": {
+   "default_icon": {
+     "16": "icon128.png",
+     "48": "icon128.png",
+     "128": "icon128.png"
+   },
+   "default_title": "VulneraTrack",
+   "default_popup": "popup.html"
+ },
+ "background.service_worker": {
+   "scripts": ["background.js"],
+   "persistent": true
+ },
+ "web_accessible_resources": [
+   {
+     "resources": ["webpage.html"],
+     "matches": ["<all_urls>"]
+   }
+ ],
+ "content_scripts": [
+  {
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }
+]
+
+}
